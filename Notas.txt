@@ -1,0 +1,13 @@
+Instalar
+	MSYS2 = ambiente + terminal + pacotes
+	MinGW-w64 = compilador que você instala dentro do MSYS2
+
+Passo a passo 
+	Passo 1: baixe https://www.msys2.org/
+	Passo 2: abra MSYS2 MinGW 64-bit (azul) no iniciar
+		(recommended) pacman -S mingw-w64-x86_64-gcc
+		(advance) pacman -Syu mingw-w64-x86_64-toolchain
+		g++ --version
+	Passo 3: teste
+		g++ hello.cpp -o hello.exe (gera .exe)
+		./hello.exe                (executa .exe)
