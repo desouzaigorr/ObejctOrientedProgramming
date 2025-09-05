@@ -3,10 +3,16 @@
 
 //start .hpp
 class Dog {
-
-    public:
+    private:
         std::string name_;
+        int age_;
+        void digestion();
+    public:
+        Dog(std::string name, int age);
         void bark();    
-        Dog(std::string name);
+        void setName(std::string name);
+        std::string getName(); 
+        void setAge(int age);
+        int getAge();
 };
 //end .hpp
